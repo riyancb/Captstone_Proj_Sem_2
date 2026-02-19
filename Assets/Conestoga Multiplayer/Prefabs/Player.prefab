@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 944271130
+  GlobalObjectIdHash: 2600027647
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
@@ -228,7 +228,7 @@ MonoBehaviour:
   headAnchor: {fileID: 1402535935287417144}
   leftHandAnchor: {fileID: 4174803557125271931}
   rightHandAnchor: {fileID: 6899976737453314417}
-  shrinkHead: 0
+  shrinkHead: 1
   bodyAlignmentRate: 0.01
   playerAvatarChangedEvent:
     m_PersistentCalls:
