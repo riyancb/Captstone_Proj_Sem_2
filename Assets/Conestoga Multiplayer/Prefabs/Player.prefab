@@ -228,7 +228,7 @@ MonoBehaviour:
   headAnchor: {fileID: 1402535935287417144}
   leftHandAnchor: {fileID: 4174803557125271931}
   rightHandAnchor: {fileID: 6899976737453314417}
-  shrinkHead: 1
+  shrinkHead: 0
   bodyAlignmentRate: 0.01
   playerAvatarChangedEvent:
     m_PersistentCalls:
