@@ -329,7 +329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1035485812484289974}
-  - component: {fileID: 5193982875618313746}
+  - component: {fileID: 2782731056973560684}
   m_Layer: 0
   m_Name: LeftLegIK_target
   m_TagString: Untagged
@@ -352,7 +352,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8983581100808158553}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5193982875618313746
+--- !u!114 &2782731056973560684
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -361,14 +361,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1895072383054524335}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d402225ab9c04184d85f7a8904f71bda, type: 3}
+  m_Script: {fileID: 11500000, guid: ddce10960c46ce4489ea9bd2b4128e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   terrainLayer:
     serializedVersion: 2
     m_Bits: 8
   body: {fileID: 6133331564874149582}
-  otherFoot: {fileID: 1967262676301930090}
+  otherFoot: {fileID: 4843151506449261266}
   speed: 4
   stepDistance: 0.2
   stepLength: 0.2
@@ -596,7 +596,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5939702632105214940}
-  - component: {fileID: 1967262676301930090}
+  - component: {fileID: 4843151506449261266}
   m_Layer: 0
   m_Name: RightLegIK_target
   m_TagString: Untagged
@@ -619,7 +619,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2365498453854825425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1967262676301930090
+--- !u!114 &4843151506449261266
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -628,14 +628,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 8494785430077188377}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d402225ab9c04184d85f7a8904f71bda, type: 3}
+  m_Script: {fileID: 11500000, guid: ddce10960c46ce4489ea9bd2b4128e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   terrainLayer:
     serializedVersion: 2
     m_Bits: 8
   body: {fileID: 6133331564874149582}
-  otherFoot: {fileID: 5193982875618313746}
+  otherFoot: {fileID: 2782731056973560684}
   speed: 4
   stepDistance: 0.2
   stepLength: 0.2
@@ -848,7 +848,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6635245195314443262, guid: 6c1600aba6b41294d9f28648504825a6,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4481898344505114584}
+      addedObject: {fileID: 6467925887092825770}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: 6c1600aba6b41294d9f28648504825a6,
     type: 3}
 --- !u!4 &375339393815111239 stripped
@@ -930,7 +930,7 @@ MonoBehaviour:
   - m_Rig: {fileID: 5277321398526562500}
     m_Active: 1
   m_Effectors: []
---- !u!114 &4481898344505114584
+--- !u!114 &6467925887092825770
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -939,7 +939,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3100131672309065684}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f23d5c9bce39c94585f1c41ab518c86, type: 3}
+  m_Script: {fileID: 11500000, guid: b4aa3f786dc264a4f82ff490b66b94d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   headIK_target: {fileID: 7615430639046054664}
