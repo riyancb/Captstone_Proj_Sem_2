@@ -1587,7 +1587,7 @@ GameObject:
   - component: {fileID: 811098595}
   - component: {fileID: 811098592}
   - component: {fileID: 811098594}
-  - component: {fileID: 811098593}
+  - component: {fileID: 811098598}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -1605,18 +1605,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 274c582f600347e4586d7db5b25606fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &811098593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 811098591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fea569abab8a2147a615b2b9d0db633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &811098594
@@ -1740,6 +1728,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1451134338}
   m_LocalEulerAnglesHint: {x: 97.63599, y: 0, z: 0}
+--- !u!114 &811098598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811098591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df4b9c1e49d51342926b51c648c223b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseUnreliableDeltas: 0
+  SyncPositionX: 1
+  SyncPositionY: 1
+  SyncPositionZ: 1
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
+  PositionThreshold: 0.001
+  RotAngleThreshold: 0.01
+  ScaleThreshold: 0.01
+  UseQuaternionSynchronization: 0
+  UseQuaternionCompression: 0
+  UseHalfFloatPrecision: 0
+  InLocalSpace: 0
+  Interpolate: 1
+  SlerpPosition: 0
 --- !u!1001 &889726703
 PrefabInstance:
   m_ObjectHideFlags: 0
