@@ -227,6 +227,7 @@ MonoBehaviour:
   avatarPrefabs:
   - {fileID: 1184231706641761113, guid: 4004daad10d903c4e9931a7f1f0b3acc, type: 3}
   - {fileID: 6021768246053190652, guid: c11c82f798da76e45a3546a8e3941de0, type: 3}
+  - {fileID: 3100131672309065684, guid: 7c08375a1256d4f4fa7c24376f65c2f7, type: 3}
   headAnchor: {fileID: 1402535935287417144}
   leftHandAnchor: {fileID: 4174803557125271931}
   rightHandAnchor: {fileID: 6899976737453314417}
