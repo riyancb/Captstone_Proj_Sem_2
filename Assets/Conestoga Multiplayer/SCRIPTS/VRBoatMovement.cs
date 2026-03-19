@@ -7,6 +7,7 @@ public class VRBoatMovement : MonoBehaviour
 
     public Transform paddle;
     public XRGrabInteractable paddleGrab;
+    public Collider paddleCollider;
 
     public float riverCurrent = 0.5f;
     public float rowingForce = 20f;
@@ -20,6 +21,7 @@ public class VRBoatMovement : MonoBehaviour
     void Start()
     {
         lastPaddlePos = paddle.position;
+        Physics.IgnoreCollision(paddleCollider, boatRB.GetComponent<Collider>());
     }
 
     void FixedUpdate()

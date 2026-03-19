@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using System.Collections;
 
 public class CrocodilePatrol : MonoBehaviour
 {
@@ -8,15 +10,24 @@ public class CrocodilePatrol : MonoBehaviour
 
     public float speed = 3f;
 
+    public Image hitFlash;
+    public AudioSource splashSound;
+
     private Transform target;
 
     void Start()
     {
         target = pointB;
+
+        if (hitFlash != null)
+        {
+            hitFlash.color = new Color(1, 0, 0, 0);
+        }
     }
 
     void Update()
     {
+
         transform.position = Vector3.MoveTowards(
             transform.position,
             target.position,
@@ -25,10 +36,7 @@ public class CrocodilePatrol : MonoBehaviour
 
         if (Vector3.Distance(transform.position, target.position) < 0.3f)
         {
-            if (target == pointA)
-                target = pointB;
-            else
-                target = pointA;
+            target = (target == pointA) ? pointB : pointA;
         }
 
         Vector3 direction = target.position - transform.position;
@@ -37,14 +45,32 @@ public class CrocodilePatrol : MonoBehaviour
         if (direction != Vector3.zero)
         {
             Quaternion rot = Quaternion.LookRotation(direction);
-            transform.rotation = Quaternion.Slerp(transform.rotation, rot, 5f * Time.deltaTime);
+            transform.rotation = Quaternion.Slerp(
+                transform.rotation,
+                rot,
+                5f * Time.deltaTime
+            );
         }
     }
-    void OnCollisionEnter(Collision collision)
+
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Boat"))
+        if (other.CompareTag("Boat"))
         {
-            SceneManager.LoadScene(0);
+            StartCoroutine(GameOverSequence());
         }
+    }
+
+    IEnumerator GameOverSequence()
+    {
+        if (splashSound != null)
+            splashSound.Play();
+
+        if (hitFlash != null)
+            hitFlash.color = new Color(1, 0, 0, 0.6f);
+
+        yield return new WaitForSeconds(1.5f);
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
